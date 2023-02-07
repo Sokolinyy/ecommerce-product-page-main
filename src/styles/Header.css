@@ -1,0 +1,129 @@
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.logo {
+  margin: 0 !important;
+}
+
+.header-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.header-navigation li {
+  margin-left: 30px;
+  color: rgb(114, 114, 114);
+  font-size: 16px;
+}
+
+.image-avatar {
+  position: relative;
+  width: 40px;
+}
+
+.cart-li {
+  position: relative;
+}
+
+.quantity-cart {
+  position: absolute;
+  top: -18px;
+  right: -6px;
+  background-color: hsl(26, 100%, 55%);
+  font-size: 10px;
+  color: white;
+  width: 15px;
+  border-radius: 5px;
+}
+
+#basket {
+  padding: 40px;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  right: -100px;
+  top: 50px;
+  width: 270px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 30px 0px;
+}
+
+#basket p {
+  margin-left: 20px;
+}
+
+.basket-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: start;
+  display: block;
+  border-bottom: 1px solid rgb(157, 157, 157);
+  width: 100%;
+}
+
+.basket-header p {
+  font-weight: 700;
+  margin-left: 20px;
+  color: black;
+}
+
+#basket-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#basket img {
+  width: 20%;
+}
+
+#basket-body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.total-price {
+  color: black;
+  font-weight: 700;
+}
+
+.trash-icon {
+  width: 30px !important;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#checkout-btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#checkout-btn {
+  margin-top: 15px;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}

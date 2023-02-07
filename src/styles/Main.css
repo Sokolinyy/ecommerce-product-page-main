@@ -1,0 +1,104 @@
+.product-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.description-container {
+  width: 400px;
+  margin-left: 100px;
+}
+
+.description-container p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product-manufacturer {
+  color: hsl(33, 100%, 60%);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.product-name {
+  font-size: 2rem;
+}
+
+.product-description {
+  font-size: 15px;
+  color: rgb(142, 142, 142);
+  font-weight: 400;
+}
+
+.product-new-price {
+  font-weight: 700;
+  font-size: 23px;
+  margin: 0 !important;
+}
+
+.price-discount {
+  display: flex;
+  align-items: center;
+}
+
+.product-discount {
+  margin-left: 10px;
+  background-color: rgba(255, 140, 0, 0.104);
+  padding: 3px 5px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.product-old-price {
+  color: rgb(166, 166, 166);
+  text-decoration:line-through;
+  font-size: 14px;
+  margin: 0 !important;
+  margin-bottom: 19px !important;
+}
+
+#counter-add-cart-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+}
+
+.increase-decrease-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(247, 247, 247);
+  border-radius: 7px;
+  width: 30%;
+  font-weight: 700;
+}
+
+.decrease-button, .increase-button {
+  color: orange;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.add-to-cart-box {
+  width: 55%;
+}
+
+#add-to-cart {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 5px;
+}
+
+.product-image {
+  width: 430px;
+  border-radius: 20px;
+}
