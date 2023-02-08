@@ -96,6 +96,7 @@
   color: white;
   background-color: hsl(26, 100%, 55%);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .product-image {

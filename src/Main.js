@@ -7,8 +7,12 @@ import "./styles/Main.css"
 import productImage from "./images/product-image/image-product-1.jpg"
 
 const Main = (props) => {
-  const addToCart = () => {
-    const basket = document.getElementById("basket").style.display = "block"
+
+  const showCard = () => {
+   const basketBody = document.getElementById('basket-body-container')
+   const empty = document.getElementById('empty-basket')
+   const basket = document.getElementById("basket")
+   basket.style.display = "flex"
   }
 
   return (
@@ -53,7 +57,7 @@ const Main = (props) => {
               <button className="increase-button" onClick={props.increase}>+</button>
             </div>
             <div className="add-to-cart-box">
-              <button id="add-to-cart" onClick={addToCart}>Add to cart</button>
+              <button id="add-to-cart" onClick={() => props.setShowElement(!props.showElement)}>Add to cart</button>
             </div>
           </div>
         </article>

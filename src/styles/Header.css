@@ -29,11 +29,11 @@
   width: 40px;
 }
 
-.cart-li {
+#cart-li {
   position: relative;
 }
 
-.quantity-cart {
+#quantity-cart-icon {
   position: absolute;
   top: -18px;
   right: -6px;
@@ -98,12 +98,12 @@
   flex-direction: column;
 }
 
-.total-price {
+#total-price {
   color: black;
   font-weight: 700;
 }
 
-.trash-icon {
+#trash-icon {
   width: 30px !important;
   margin-left: 30px;
   cursor: pointer;
