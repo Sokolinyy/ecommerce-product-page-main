@@ -1,0 +1,47 @@
+.image-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#product-image {
+  object-fit: contain;
+  max-width: 430px;
+  border-radius: 10px;
+}
+
+.grid {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+
+.grid-item img:hover {
+  opacity: 0.7;
+}
+
+.grid-item {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 92px;
+  border-radius: 7px;
+  transition: max-width 0.15s;
+  cursor: pointer;
+}
+
+.close-icon {
+  filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(97deg) brightness(1002%) contrast(100%);
+}

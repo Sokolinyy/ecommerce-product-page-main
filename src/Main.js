@@ -5,6 +5,7 @@ import Header from "./Header";
 import "./styles/Main.css"
 
 import productImage from "./images/product-image/image-product-1.jpg"
+import ImageBox from "./ImageBox";
 
 const Main = (props) => {
 
@@ -19,8 +20,7 @@ const Main = (props) => {
     <main>
       <section className="product-main">
         <article className="product-images">
-          <img className="product-image" src={productImage}></img>
-
+          <ImageBox />
         </article>
 
         <article className="description-container">

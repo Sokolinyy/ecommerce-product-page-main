@@ -1,3 +1,7 @@
+header {
+  cursor: default;
+}
+
 body {
   padding: 10px 90px 20px 90px;
   font-family: 'Kumbh Sans', sans-serif;

@@ -43,7 +43,7 @@ const Header = (props) => {
           <li id="cart-li">
             <img src={cartIcon} onClick={cart}></img>
             <p id="quantity-cart-icon"></p>
-            <article id="basket" style={{ display: "none" }}>
+            <article id="basket" style={{ display: "none", cursor: "default" }}>
               <div id="empty-basket" style={
                 { 
                   display: "none",
