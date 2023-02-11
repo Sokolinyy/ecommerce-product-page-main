@@ -1,7 +1,5 @@
 import React from "react";
 
-import Header from "./Header";
-
 import "./styles/Main.css"
 
 import productImage from "./images/product-image/image-product-1.jpg"
@@ -15,7 +13,7 @@ const Main = (props) => {
    const basket = document.getElementById("basket")
    basket.style.display = "flex"
   }
-
+  
   return (
     <main>
       <section className="product-main">
