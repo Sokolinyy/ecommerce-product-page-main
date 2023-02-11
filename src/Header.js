@@ -5,11 +5,14 @@ import cartIcon from "./images/icon/icon-cart.svg";
 import imageAvatar from "./images/image-avatar.png";
 import productImage from "./images/product-image/image-product-1.jpg";
 import trashIcon from "./images/icon/icon-delete.svg";
+import menu from "./images/icon/icon-menu.svg"
 
 import "./styles/Header.css";
 
 const Header = (props) => {
-  const cart = () => {
+  const [hamburgerMenu, setHamburgerMenu] = useState(false)
+
+  function cart() {
     const basket = document.getElementById("basket");
     if (basket.style.display === "none") {
       basket.style.display = "block";
@@ -26,13 +29,19 @@ const Header = (props) => {
     quantityCartIcon.textContent = 0
   }
 
+
   return (
     <header>
       <nav className="header-navigation">
-        <ul>
-          <li className="logo">
-            <img src={logo}></img>
-          </li>
+        <ul className="header-nav-ul">
+          <div className="menu-logo-icon-container">
+            <div className="menu-icon-container">
+              <img className="menu-img" src={menu}></img>
+            </div>
+            <div className="logo-container">
+              <img className="logo-img" src={logo}></img>
+            </div>
+          </div>
           <li>Collections</li>
           <li>Men</li>
           <li>Women</li>
@@ -41,7 +50,7 @@ const Header = (props) => {
         </ul>
         <ul>
           <li id="cart-li">
-            <img src={cartIcon} onClick={cart}></img>
+            <img className="cart-icon" src={cartIcon} onClick={cart}></img>
             <p id="quantity-cart-icon"></p>
             <article id="basket" style={{ display: "none", cursor: "default" }}>
               <div id="empty-basket" style={
@@ -60,7 +69,7 @@ const Header = (props) => {
               </div>
               <div id="basket-body-container" style={{display: "flex"}}>
                 <div id="basket-body" style={{marginTop: "60px"}}>
-                  <img src={productImage}></img>
+                  <img className="product-image" src={productImage}></img>
                   <p>{`${props.descriptionProduct.title} `}</p>
                   <p id="quantity-cart"></p>
                   <p id="total-price"></p>
