@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 820px) {
   body {
-    height: 150vh;
+    height: 160vh;
     padding: 0 !important;
   }
 
@@ -135,14 +135,14 @@
   }
 
   .product-description {
-    width: 80%;
+    width: 100%;
     font-size: 23px;
   }
 }
 
 @media screen and (max-width: 500px) {
   body {
-    height: 160vh;
+    height: 140vh;
   }
 
   #product-image {
@@ -150,7 +150,7 @@
   }
 
   .description-container {
-    width: 95%;
+    width: 100%;
     margin: 0;
   }
 

@@ -28,7 +28,7 @@ function App() {
     setCounterItem((count) => Math.max(count - 1, 0));
   };
 
-  const [showElement, setShowElement] = useState(true);
+  const [showElement, setShowElement] = useState(false);
 
   useEffect(() => {
     const quantityCartIcon = document.getElementById("quantity-cart-icon");

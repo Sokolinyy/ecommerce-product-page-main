@@ -27,8 +27,14 @@ function ImageBox() {
     setShowImage(false);
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      handleClose();
+    }
+  };
+
   return (
-    <article className="image-box">
+    <article className="image-box" onKeyDown={handleKeyDown} tabIndex={0}>
       {showImage && (
         <div
           style={{
